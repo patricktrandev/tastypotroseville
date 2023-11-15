@@ -1,38 +1,1036 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.1rem;
+  color: #fff;
+  background-color: #333333;
+}
+.line::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #df4636;
+  display: block;
+  box-shadow: 0 0 20px 0 #df4636;
+  transition: all 0.5s;
+}
+.line:hover::after {
+  width: 100%;
+}
+.line.active::after {
+  width: 100%;
+}
+
+.section-spacing {
+  margin: 3.5rem auto;
+}
+.subtitle span {
+  text-transform: uppercase;
+  font-size: 1.475rem;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 25px;
+}
+.subtitle::before {
+  content: "";
+  height: 4px;
+  border-radius: 2px;
+  width: 30px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #df4636;
+}
+.line-bottom-section {
+  padding: 1.5rem 0 5rem;
+  border-bottom: 2px dashed #df4636;
+}
+.line-bottom-title {
+  margin: auto;
+  border-bottom: 3px solid #fff;
+  width: 300px;
+}
+.common-button {
+  font-weight: 500;
+  font-size: 1.4rem;
+  border: 1px solid #df4636;
+  padding: 15px 33px;
+  display: inline-block;
+  background-color: #df4636;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+.common-button:hover {
+  background: none;
+  color: #df4636;
+}
+.common-button a {
+  text-decoration: none;
+  color: #fff;
+}
+/* HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  height: 100px;
+}
+#headerHome .navbar-collapse {
+  z-index: 18;
+}
+#headerCommon {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  width: 100%;
+  border-bottom: 15px solid #df4636;
+  z-index: 5;
+}
+#headerFixed {
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 15px solid #df4636;
+  transform: translate(-50%, -400%);
+  z-index: 16;
+}
+.tastyhotPotNav .logo-img {
+  max-height: 91px;
+  width: 100%;
+}
+#tastyHotPotNavBar .navbar-nav {
+  border-bottom: 1px solid rgba(255, 255, 255);
+}
+#tastyHotPotNavBar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 0.8em;
+  padding: 0.5rem 1rem;
+}
+
+/* CAROUSEL */
+#carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption {
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+#carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 3.25rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+#carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+#carouselTastyHotpot .carousel-indicators {
+  justify-content: flex-start;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#carouselTastyHotpot .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: transparent;
+  opacity: 1;
+  box-sizing: border-box;
+}
+#carouselTastyHotpot .carousel-indicators li.active {
+  background: #fff;
+}
+#carouselTastyHotpot .tastyHotPotCarousel__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(49, 47, 47), transparent);
+}
+
+#carouselTastyHotpot {
+  height: 600px;
+}
+#carouselTastyHotpot .carousel-inner {
+  height: 100%;
+}
+#carouselTastyHotpot .carousel-item {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+#carouselTastyHotpot .carousel-item:first-child {
+  background-image: url("../public/image/tasty_hotpot_home_1.jpg");
+}
+#carouselTastyHotpot .carousel-item:nth-child(2) {
+  background-image: url("../public/image/tasty_hotpot_home_2.png");
+}
+#carouselTastyHotpot .carousel-item:nth-child(3) {
+  background-image: url("../public/image/tasty_hotpot_home_3.jpg");
+}
+/* INTRO */
+
+.tastyHotpotIntro__item {
+  padding: 7px 17px;
+}
+.container.tastyHotpotIntro {
+  width: 90% !important;
+}
+.tastyHotpotIntro .tastyHotpotIntro__item .tastyHotpotIntro__title {
+  margin-bottom: 1.3rem;
+}
+
+.tastyHotpotIntro p {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  padding: 0 5px;
+}
+/* PROMOTION */
+.tasty__promotion {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tasty__promotion__row {
+  text-align: center;
+  border-bottom: 3px double #fff;
+  border-top: 3px double #fff;
+  border-right: 3px double #fff;
+  border-left: 3px double #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tasty__promotion .tasty__promotion__item {
+  padding: 6% 60px;
+  width: 70%;
+}
+.tasty__promotion .tasty__promotion__title > h1 {
+  font-size: 2rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: 7px;
+  color: #df4636;
+}
+.tasty__promotion .tasty__promotion__item .tasty__promotion__title h3 {
+  color: #c3cad1;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin: 1rem 12px 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasty__promotion .promotion__tasty__title__content_text {
+  margin: auto;
+  padding: 125px 0;
+}
+
+.tasty__promotion .promotion__tasty__title__content_text > h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 7px;
+  color: #df4636;
+}
+.tasty__promotion .promotion__tasty__title__content_text > h3 {
+  border-bottom: 1px solid #fff;
+  color: #c3cad1;
+  letter-spacing: 2px;
+  line-height: 2.5rem;
+  font-size: 22px;
+  margin: 1rem 12px 1rem;
+}
+.tasty__promotion .tasty__promotion__item .tasty__promotion__content {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+.tasty__promotion .tasty__promotion__item .tasty__promotion__content span {
+  color: #df4636;
+}
+.tasty__promotion .tasty__promotion__img {
+  padding: 0;
+}
+.tasty__promotion img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.tasty__promotion .promotion__tasty__img img {
+  width: 80%;
+  object-fit: cover;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.tasty__top__footer {
+  background-color: #df4636;
+  padding: 3px 0;
+}
+.tasty__top__footer .tasty__top__footer__logo img {
+  width: 80px;
+}
+.tasty__top__footer__address p {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+.tasty__top__footer__social {
+  text-align: right;
+  padding: 15px 10px;
+}
+.tasty__top__footer__social a {
+  font-size: 1.8rem;
+  margin: 20px 7px;
+  color: #fff;
+}
+
+/* MENU */
+
+.tastyMenu__hotpot {
+  margin: 0 auto;
+  margin: 10.5rem auto;
+}
+.tastyMenu__hotpot__caption {
+  color: #7a7a7a;
+  font-size: 1.5rem;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__img {
+  overflow: hidden;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__img img {
+  max-width: 280px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__item:hover img {
+  scale: 1.1;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__item {
+  margin: 17px 10px 17px 0;
+  background-color: #121a1d;
+  border: 2px outset #333333;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content {
+  padding: 25px 10px;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h3 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h4 {
+  color: #7a7a7a;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content a {
+  color: #df4636;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content i {
+  color: #df4636;
+}
+
+.tastyMenu__hotpot_step {
+  margin: 2.3rem auto 2.5rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  line-height: 1.3rem;
+  color: #df4636;
+}
+.drink__tasty__acha {
+  margin: 2.3rem auto 2.5rem;
+  font-size: 2.8rem;
+  letter-spacing: 4px;
+  line-height: 1.6rem;
+  font-family: "Lobster", sans-serif;
+  color: #df4636;
+}
+/* SPICY LEVEL*/
+.tasty__spicy,
+.drink__tasty {
+  padding: 2.8rem 0;
+  color: #000;
+}
+.tasty__spicy__list,
+.drink__tasty__list {
+  margin: auto;
+}
+.tasty__spicy .tasty__spicy__level {
+  margin: 25px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #efefef;
+  box-shadow: 5px 5px 2px 1px rgba(200, 200, 235, 0.2);
+  border-color: #7a7a7a;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.tasty__spicy .tasty__spicy__level__item {
+  padding: auto;
+  margin: auto;
+  position: relative;
+  height: 120px;
+  width: 120px;
+  background-color: #efefef;
+  border-radius: 50%;
+}
+.tasty__spicy__icon {
+  position: absolute;
+  left: 50%;
+  top: 37%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+
+  display: inline;
+}
+.tasty__spicy__level__item .tasty__spicy__icon i {
+  margin: 2px;
+}
+.tasty__spicy__level__item .tasty__spicy__icon .fa-pepper-hot {
+  color: rgb(190, 27, 27);
+}
+.tasty__spicy__level__item.none .tasty__spicy__icon .fa-pepper-hot {
+  color: #535050;
+}
+.tasty__spicy__level__item:first-child .tasty__spicy__icon .fa-ban {
+  color: rgb(190, 27, 27);
+}
+.tasty__spicy__text {
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+.drink__tasty .drink__tasty__list .drink__tasty__list__img img {
+  max-height: 200px;
+  width: 200px;
+}
+.drink__tasty__list .drink__tasty__list__item {
+  height: 240px;
+  width: 240px;
+  background-color: #efefef;
+  border-radius: 50%;
+  margin: auto;
+}
+.drink__tasty .drink__tasty__list {
+  margin: auto;
+  text-align: center;
+}
+.drink__tasty__list__text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+/* ADD ONS */
+
+.tasty__addons .tasty__addons__title span {
+  color: #121a1d;
+}
+.tasty__addons .tasty__addons__list,
+.tasty__drinks .tasty__drinks_list,
+.drink__tasty .tasty__drinks_list {
+  margin: 2.3rem 0 0;
+}
+.tasty__addons .tasty__addons__list ul,
+.tasty__addons__directions-list ul,
+.tasty__drinks .tasty__drinks_list ul,
+.drink__tasty .tasty__drinks_list__item ul {
+  list-style-type: none;
+}
+.tasty__addons .tasty__addons__list li {
+  border-bottom: 1px dotted #ccc;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.tasty__drinks .tasty__drinks_list li,
+.drink__tasty .tasty__drinks_list__item li {
+  padding: 5px 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+.tasty__addons__directions-list,
+.tasty__drinks__directions-list {
+  margin: 0 auto;
+}
+.tasty__drinks__directions-list .fa-star {
+  color: #ccc;
+}
+.tasty__addons .fa-thumbs-up,
+.tasty__drinks .fa-star,
+.drink__tasty .fa-star {
+  color: #df4636;
+  font-size: 1.3rem;
+}
+.tasty__addons .fa-question-circle {
+  color: #111010;
+  font-size: 1.3rem;
+}
+/* DRINKS */
+.tasty__drinks,
+.drink__tasty {
+  padding: 40px 30px;
+  color: #fff;
+  position: relative;
+}
+
+.tasty__drinks__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #535050, transparent);
+}
+
+.tasty__drinks h4 {
+  font-size: 1.9rem;
+  color: #df4636;
+  font-weight: 700;
+  padding: 7px 0;
+  font-family: "Lobster", sans-serif;
+  width: 100px;
+  vertical-align: middle;
+  border-bottom: 4px double #7a7a7a;
+}
+.drink__tasty h4 {
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 7px 0;
+
+  font-family: "Lobster", sans-serif;
+  border-top: 4px double #7a7a7a;
+  border-bottom: 4px double #7a7a7a;
+}
+.tasty__drinks_list__item,
+.drink__tasty .tasty__drinks_list__item {
+  padding: 32px 0;
+}
+.tasty__drinks_list__item__title,
+.drink__tasty .tasty__drinks_list__item__title {
+  text-align: center;
+  margin: auto;
+}
+.rotate {
+  transform: rotate(-90deg);
+}
+.subtitle_drink {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+}
+.drink__tasty .tasty__drinks_list__item__title li {
+  width: 400px;
+}
+.desc_drink {
+  flex: 1;
+  border-bottom: 1px dotted #fff;
+}
+.desc_drink span {
+  position: relative;
+  background: #333333;
+  top: 5px;
+}
+/* HOTPOT ITEM */
+/* HOTPOT ITEM */
+.hotpot__item {
+  margin: 10.5rem auto;
+}
+.hotpot__item__content {
+  background-color: #2e2d2d;
+  background-image: url("../public/image/body_bg.jpg");
+  color: #000;
+  padding: 1.8rem;
+  border-radius: 9px;
 }
 
-.App-link {
-  color: #61dafb;
+.hotpot__item .hotpot__item__img {
+  overflow: hidden;
+  border: 4px solid #ccc;
+  border-radius: 7px;
+  object-fit: cover;
+}
+.hotpot__item .hotpot__item__img img {
+  max-width: 650px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.hotpot__item .hotpot__item__img:hover img {
+  scale: 1.1;
+}
+.hotpot__item .hotpot__menu__item__content h3 {
+  font-weight: 700;
+  color: #df4636;
+  font-size: 2.3rem;
+}
+.hotpot__item .hotpot__menu__item__content h4 {
+  font-size: 1.7rem;
+  margin: 12px 0;
+}
+.hotpot__item .hotpot__menu__item__text {
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+/* ABOUT TASTY */
+.about__tasty,
+.promotion__tasty {
+  margin: 7rem auto 0;
+}
+.promotion__tasty__title {
+  background-color: #df4636;
+  padding: 5rem 0;
+}
+.promotion__tasty__title p {
+  line-height: 2rem;
+  font-size: 3rem;
+  letter-spacing: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.promotion__tasty__title h1 {
+  line-height: 9rem;
+  font-size: 9rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+}
+.promotion__tasty__content {
+  padding: 4.5rem 0;
+}
+.promotion__tasty__content__title h3 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 2.3rem;
+  letter-spacing: 5px;
+}
+.promotion__tasty__content__title h5 {
+  margin-top: 1.3rem;
+  font-family: "Lobster", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+.promotion__tasty__content__item {
+  margin: 1.5rem 0;
+  width: 700px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.promotion__tasty__content_ligth {
+  background-color: #fff;
+  color: #111010;
+  padding: 4.5rem 0;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 991.98px) {
+  header .navbar-brand,
+  #headerCommon .navbar-brand {
+    max-width: 180px;
   }
-  to {
-    transform: rotate(360deg);
+  header .navbar-brand img,
+  #headerCommon .navbar-brand img {
+    max-width: 100%;
+  }
+  #headerHome .navbar-nav .nav-link,
+  #headerFixed .navbar-nav .nav-link,
+  #headerCommon .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 20px 12px;
+    letter-spacing: 2px;
+  }
+  /* carousel */
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption {
+    left: 55%;
+  }
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 2.9rem;
+    letter-spacing: 2.3px;
+    margin-bottom: 10px;
+  }
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 1.45rem;
+    line-height: 1.1rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  .common-button {
+    font-size: 1.4rem;
+    border: 1px solid #df4636;
+    padding: 13px 29px;
+    margin-top: 13px;
+  }
+  #carouselTastyHotpot .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+  }
+  /* INTRO */
+  .tastyHotpotIntro .tastyHotpotIntro__item {
+    padding: 12px 22px;
+    margin-bottom: 22px;
+  }
+  /* PROMOTION */
+  .tasty__promotion__row {
+    margin-bottom: 2rem;
+  }
+  .tasty__promotion img {
+    width: 80%;
+  }
+
+  /* MENU */
+
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h3 {
+    font-size: 1.2rem;
+  }
+
+  .tastyMenu__hotpot .subtitle,
+  .tastyMenu__hotpot__caption {
+    margin: 0 30px;
+  }
+  /* ITEM MENU */
+
+  .hotpot__item .hotpot__item__img img {
+    max-width: 650px;
+  }
+  .hotpot__item .hotpot__menu__item__content h3 {
+    font-size: 1.9rem;
+    margin: 12px 0;
+  }
+  .hotpot__item .hotpot__menu__item__content h4 {
+    font-size: 1.5rem;
+  }
+  .hotpot__item .hotpot__menu__item__text {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .line.active::after {
+    width: 0;
+  }
+  /* HEADER */
+  header .navbar-toggler,
+  #headerCommon .navbar-toggler {
+    color: #df4636;
+  }
+  header .navbar-toggler:focus {
+    outline: none;
+  }
+  #headerHome .navbar-nav,
+  #headerFixed .navbar-nav,
+  #headerCommon .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+  #headerHome .navbar-nav .active .nav-link,
+  #headerFixed .navbar-nav .active .nav-link,
+  #headerCommon .navbar-nav .active .nav-link {
+    color: #df4636;
+  }
+  /* carousel */
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+  }
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 1.1rem;
+    line-height: 0.9rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  .common-button {
+    font-size: 1.1rem;
+    border: 1px solid #df4636;
+    padding: 12px 27px;
+    margin-top: 10px;
+  }
+  #carouselTastyHotpot .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+  }
+  /* INTRO */
+  .tastyHotpotIntro .tastyHotpotIntro__item {
+    padding: 12px 22px;
+    margin: 15px 22px;
+  }
+  /* PROMOTION */
+
+  .tasty__promotion .tasty__promotion__title > h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: #df4636;
+  }
+  .tasty__promotion .tasty__promotion__item .tasty__promotion__title h3 {
+    color: #c3cad1;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    margin: 0.8rem 12px 1rem;
+  }
+  .tasty__promotion .tasty__promotion__item .tasty__promotion__content {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .promotion__tasty__title {
+    padding: 3rem 0;
+  }
+  .promotion__tasty__title p {
+    font-size: 2.5rem;
+  }
+  .promotion__tasty__title h1 {
+    font-size: 4.5rem;
+  }
+  .promotion__tasty__content__item {
+    width: 500px;
+  }
+  /* FOOTER */
+  .tasty__top__footer .tasty__top__footer__logo img {
+    width: 60px;
+  }
+  .tasty__top__footer__address p {
+    font-size: 1.1rem;
+  }
+  .tasty__top__footer__social {
+    text-align: center;
+  }
+  /* MENU */
+  .tastyMenu__hotpot .subtitle,
+  .tastyMenu__hotpot__caption {
+    margin: 0 50px;
+  }
+
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content {
+    padding: 20px 7px;
+    text-align: center;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__img img {
+    max-width: 480px;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h3 {
+    font-size: 1.4rem;
+    margin: 7px;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h4 {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content p {
+    font-size: 1.1rem;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content a {
+    font-size: 1.1rem;
+  }
+  /* ITEM MENU */
+  .hotpot__item .hotpot__item__img img {
+    max-width: 500px;
+  }
+  .hotpot__item .hotpot__menu__item__content h3 {
+    font-size: 1.3rem;
+  }
+  .hotpot__item .hotpot__menu__item__content h4 {
+    font-size: 1.2rem;
+  }
+  .hotpot__item .hotpot__menu__item__text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  header .navbar-brand,
+  #headerCommon .navbar-brand {
+    max-width: 110px;
+  }
+  header .navbar-brand img,
+  #headerCommon .navbar-brand img {
+    max-width: 100%;
+  }
+  #headerHome .navbar-nav .nav-link,
+  #headerFixed .navbar-nav .nav-link,
+  #headerCommon .navbar-nav .nav-link {
+    font-size: 11px;
+    padding: 16px 8px;
+    letter-spacing: 1.5px;
+  }
+  /* carousel */
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption {
+    left: 60%;
+  }
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 1.55rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  #carouselTastyHotpot .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  .common-button {
+    font-size: 1rem;
+    border: 1px solid #df4636;
+    padding: 9px 22px;
+    margin-top: 7px;
+  }
+  #carouselTastyHotpot .carousel-indicators {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #carouselTastyHotpot .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+  }
+  /* INTRO */
+  .tastyHotpotIntro .tastyHotpotIntro__item {
+    padding: 5px 17px;
+    margin: 12px 30px;
+  }
+  .tastyHotpotIntro p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding: 0 5px;
+  }
+  .subtitle span {
+    font-size: 1.2rem;
+  }
+  /* PROMOTION */
+  .tasty__promotion .tasty__promotion__title > h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: #df4636;
+  }
+  .promotion__tasty__title {
+    padding: 2.5rem 0;
+  }
+  .promotion__tasty__title p {
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+  }
+  .promotion__tasty__title h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .promotion__tasty__content__title h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .promotion__tasty__content__title h5 {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
+  .promotion__tasty__content__item p {
+    font-size: 0.8rem;
+  }
+  .tasty__promotion .tasty__promotion__item .tasty__promotion__title h3 {
+    color: #c3cad1;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    margin: 2rem 12px 1rem;
+  }
+  .tasty__promotion .tasty__promotion__item .tasty__promotion__content {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  .tasty__promotion .promotion__tasty__title__content_text h1 {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+  .tasty__promotion .promotion__tasty__title__content_text h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  /* FOOTER */
+  .tasty__top__footer__social {
+    padding: 12px 7px;
+  }
+  .tasty__top__footer__social a {
+    font-size: 1.6rem;
+  }
+  .promotion__tasty__content__item {
+    width: 300px;
+  }
+
+  /* MENU */
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content {
+    padding: 20px 7px;
+    text-align: center;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__img img {
+    max-width: 480px;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h3 {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h4 {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content p {
+    font-size: 1rem;
+  }
+  .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content a {
+    font-size: 1rem;
+  }
+  .tastyMenu__hotpot__caption {
+    font-size: 1.2rem;
+  }
+  .tastyMenu__hotpot .subtitle,
+  .tastyMenu__hotpot__caption {
+    margin: 0 30px;
+  }
+  /* ITEM MENU */
+  .hotpot__item .subtitle {
+    margin: 0 30px;
+  }
+  .hotpot__item .hotpot__item__img img {
+    max-width: 320px;
+  }
+  .hotpot__item .hotpot__menu__item__content h3 {
+    font-size: 1.3rem;
+    margin: 9px 0;
+  }
+  .hotpot__item .hotpot__menu__item__content h4 {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  .hotpot__item .hotpot__menu__item__text {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  .hotpot__item .hotpot__menu__item__content p:last-child {
+    font-size: 1rem;
+  }
+
+  .about__tasty,
+  .promotion__tasty {
+    padding: 0 1.8rem;
   }
 }
