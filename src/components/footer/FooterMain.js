@@ -24,11 +24,6 @@ export const FooterMain = () => {
                   <i className="fab fa-facebook"></i>
                 </a>
               </span>
-              <span>
-                <a href="#">
-                  <i className="fa-brands fa-tiktok"></i>
-                </a>
-              </span>
             </div>
           </div>
         </div>

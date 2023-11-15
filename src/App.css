@@ -214,12 +214,19 @@ header {
 .tasty__promotion {
   text-align: center;
 }
-.tasty__promotion__row {
+.tasty__promotion__row__poster {
   text-align: center;
   border-bottom: 3px double #fff;
   border-top: 3px double #fff;
   border-right: 3px double #fff;
   border-left: 3px double #fff;
+}
+.tasty__promotion__row__new {
+  text-align: center;
+  border-bottom: 3px double #df4636;
+  border-top: 3px double #df4636;
+  border-right: 3px double #df4636;
+  border-left: 3px double #df4636;
 }
 
 .tasty__promotion .tasty__promotion__item {
@@ -550,6 +557,7 @@ header {
 .drink__tasty .tasty__drinks_list__item__title li {
   width: 400px;
 }
+
 .desc_drink {
   flex: 1;
   border-bottom: 1px dotted #fff;
@@ -559,6 +567,55 @@ header {
   background: #333333;
   top: 5px;
 }
+
+/* ABOUT TASTY */
+.about__tasty,
+.promotion__tasty {
+  margin: 10rem auto;
+}
+.about__tasty__content,
+.promotion__tasty__content {
+  border: 5px double #ccc;
+  border-radius: 12px;
+  padding: 22px 35px;
+  line-height: 1.6rem;
+}
+.promotion__tasty h4 {
+  text-align: center;
+  margin: 12px 0;
+  color: #7a7a7a;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 7px 0;
+}
+.about__tasty__content h4 {
+  margin: 22px 0;
+  color: #7a7a7a;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 7px 0;
+  border-bottom: 2px dotted #535050;
+}
+.promotion__tasty p:first-child {
+  text-align: center;
+}
+.about__tasty__content p,
+.promotion__tasty p {
+  font-size: 1.4rem;
+  letter-spacing: 0.8px;
+}
+.about__tasty__content p > span,
+.promotion__tasty p > span {
+  font-size: 1.3rem;
+  color: #df4636;
+  font-style: italic;
+}
+.about__tasty__content p > a {
+  color: #fff;
+}
+
 /* HOTPOT ITEM */
 /* HOTPOT ITEM */
 .hotpot__item {

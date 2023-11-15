@@ -48,7 +48,35 @@ export const About = () => {
           </div>
         </div>
       </section>
-
+      <section class="container about__tasty">
+        <div class="row about__tasty__content">
+          <div class="col-12">
+            <h4>Address and hour</h4>
+            <p>
+              <span class="mr-3">Address: </span> 1020 pleasant grove blvd #170,
+              Roseville, CA 95678
+            </p>
+            <p>
+              <span class="mr-3">Phone: </span> 916-749-4236
+            </p>
+            <p>
+              <span class="mr-3">Monday – Sunday</span> 11:00am-10:00pm
+            </p>
+            <p>
+              <span>Follow our Instagram </span>
+            </p>
+            <p>
+              <span class="mr-2">
+                {" "}
+                <i class="fab fa-instagram"></i>{" "}
+              </span>
+              <a href="https://www.instagram.com/the.tastypot/">
+                tastypotroseville
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
       <FooterMain />
     </Fragment>
   );
