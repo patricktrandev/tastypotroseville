@@ -4,9 +4,9 @@ export const HeaderPromotion = () => {
   return (
     <section id="headerCommon">
       <nav className="tastyhotPotNav container navbar navbar-expand-md">
-        <a className="navbar-brand" href="index.html">
+        <Link className="navbar-brand" to="/">
           <img className="logo-img" src="/image/logo_tasty.png" alt="logo" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

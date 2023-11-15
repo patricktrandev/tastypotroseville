@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { FooterMain } from "./footer/FooterMain";
 import { HeaderAbout } from "./header/HeaderAbout";
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 export const About = () => {
   return (
     <Fragment>
@@ -48,35 +48,44 @@ export const About = () => {
           </div>
         </div>
       </section>
-      <section class="container about__tasty">
-        <div class="row about__tasty__content">
-          <div class="col-12">
+      <section className="container about__tasty">
+        <div className="row about__tasty__content">
+          <div className="col-12">
             <h4>Address and hour</h4>
             <p>
-              <span class="mr-3">Address: </span> 1020 pleasant grove blvd #170,
-              Roseville, CA 95678
+              <span className="mr-3">Address: </span> 1020 pleasant grove blvd
+              #170, Roseville, CA 95678
             </p>
             <p>
-              <span class="mr-3">Phone: </span> 916-749-4236
+              <span className="mr-3">Phone: </span> 916-749-4236
             </p>
             <p>
-              <span class="mr-3">Monday – Sunday</span> 11:00am-10:00pm
+              <span className="mr-3">Monday – Sunday</span> 11:00am-10:00pm
             </p>
             <p>
               <span>Follow our Instagram </span>
             </p>
-            <p>
-              <span class="mr-2">
-                {" "}
-                <i class="fab fa-instagram"></i>{" "}
-              </span>
-              <a href="https://www.instagram.com/the.tastypot/">
+            <a href="https://www.instagram.com/the.tastypot/">
+              <p>
+                <span className="mr-2">
+                  <i className="fab fa-instagram" />
+                </span>
                 tastypotroseville
-              </a>
-            </p>
+              </p>
+            </a>
+
+            <a href="https://www.yelp.com/biz/tasty-pot-roseville-roseville">
+              <p>
+                <span className="mr-2">
+                  <i className="fa-brands fa-yelp" />
+                </span>
+                tastypotroseville
+              </p>
+            </a>
           </div>
         </div>
       </section>
+
       <FooterMain />
     </Fragment>
   );

@@ -6,13 +6,13 @@ export const HeaderMain = () => {
       <header className="container-md">
         <div id="headerHome">
           <nav className="tastyhotPotNav navbar navbar-expand-md">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="/">
               <img
                 className="logo-img"
                 src="/image/logo_tasty.png"
                 alt="logo"
               />
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"

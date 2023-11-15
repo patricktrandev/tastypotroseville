@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 export const Carousel = () => {
   return (
     <section>
@@ -22,15 +22,12 @@ export const Carousel = () => {
             <div className="tastyHotPotCarousel__overlay" />
             <div className="container carousel-caption">
               <div className="col-10 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-                <h1>Get a free drink from us!</h1>
-                <p>
-                  We love feedbacks, review us on yelp and get 5% off to your
-                  next order*
-                </p>
+                <h1>Christmas Drink</h1>
+                <p>New Christmas Drink</p>
                 <div className="common-button">
-                  <a href="#">
-                    <span>Check your points here</span>
-                  </a>
+                  <Link to="/promotion">
+                    <span>Get new promotion!</span>
+                  </Link>
                 </div>
               </div>
             </div>

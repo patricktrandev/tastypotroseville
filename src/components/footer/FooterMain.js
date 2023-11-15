@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export const FooterMain = () => {
   return (
     <footer>
@@ -15,13 +15,13 @@ export const FooterMain = () => {
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tasty__top__footer__social">
               <span>
-                <a href="#">
+                <a href="https://www.instagram.com/tastypotroseville?igshid=MzMyNGUyNmU2YQ%3D%3D&fbclid=IwAR3hldirCM1c_h4AKRavY5nmJoZuUJDD0StxysesFJmAAyp-MThG1K_TA6Q">
                   <i className="fab fa-instagram"></i>
                 </a>
               </span>
               <span>
-                <a href="#">
-                  <i className="fab fa-facebook"></i>
+                <a href="https://www.yelp.com/biz/tasty-pot-roseville-roseville">
+                  <i className="fa-brands fa-yelp"></i>
                 </a>
               </span>
             </div>
@@ -33,9 +33,6 @@ export const FooterMain = () => {
           <div className="row text-center">
             <div className="col">
               <p>© Tasty Hot Pot 2023. All rights reserved</p>
-              <p>
-                <a href="mailto:TastyPotEG@gmail.com">TastyPotEG@gmail.com</a>
-              </p>
             </div>
           </div>
         </div>

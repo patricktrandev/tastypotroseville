@@ -7,7 +7,7 @@ const listPromo = [
     description: "Happy Holidays from Tasty Pot",
     imgSrc: "happyholidys.png",
     name1: "Christmas 2023",
-    description1: "Our Business",
+    description1: "Hour Business",
     imgSrc1: "hourbusiness.png",
   },
   {
