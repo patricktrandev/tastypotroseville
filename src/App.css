@@ -113,7 +113,7 @@ header {
 }
 .tastyhotPotNav .logo-img {
   max-height: 91px;
-  width: 100%;
+  width: 105%;
 }
 #tastyHotPotNavBar .navbar-nav {
   border-bottom: 1px solid rgba(255, 255, 255);
@@ -874,7 +874,7 @@ header {
   }
   /* FOOTER */
   .tasty__top__footer .tasty__top__footer__logo img {
-    width: 75px;
+    width: 80px;
   }
   .tasty__top__footer__address p {
     font-size: 1.1rem;
