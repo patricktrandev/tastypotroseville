@@ -4,8 +4,8 @@ export const Promotion = () => {
   return (
     <section className="tasty__promotion section-spacing">
       <div className="container">
-        <div className="row tasty__promotion__row">
-          <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__promotion__item">
+        <div className="row tasty__promotion__row justify-content-center">
+          <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__promotion__item ">
             <h3 className="tasty__promotion__title">
               Tasty Pot, Eat Well, Live Well.
             </h3>
@@ -23,7 +23,7 @@ export const Promotion = () => {
             <img src="/image/tasty_hotpot_menu_2.jpg" alt="rewardad" />
           </div>
         </div>
-        <div className="row tasty__promotion__row">
+        <div className="row tasty__promotion__row justify-content-center">
           <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__promotion__img">
             <img src="/image/tasty_hotpot_menu_1.jpg" alt="rewardad" />
           </div>

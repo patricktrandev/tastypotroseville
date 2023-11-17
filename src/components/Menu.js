@@ -6,7 +6,8 @@ import { AddOns } from "./menu/AddOns";
 import { DrinkACha } from "./menu/DrinkACha";
 import { FooterMain } from "./footer/FooterMain";
 import { Loader } from "./layout/Loader";
-const delay = 2;
+import { StepRice } from "./menu/StepRice";
+const delay = 1;
 export const Menu = () => {
   const [show, setShow] = useState(false);
 
@@ -25,6 +26,7 @@ export const Menu = () => {
 
           <ListMenu />
           <Spicy />
+          <StepRice />
           <AddOns />
           <DrinkACha />
           <FooterMain />

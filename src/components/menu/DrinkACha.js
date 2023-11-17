@@ -3,6 +3,7 @@ const listDrink = [
   {
     category: "Mustache",
     categoryImage: "milkcream1.png",
+    nameImage: "Milk Creme Green Tea",
     itemDrinks: [
       { name: "Milk Creme Green Tea", price: "$5.75" },
       { name: "Milk Creme Black Tea", price: "$5.75" },
@@ -12,6 +13,7 @@ const listDrink = [
   {
     category: "Milk Tea",
     categoryImage: "greentea1.png",
+    nameImage: "Green Tea",
     itemDrinks: [
       { name: "Hokkaido Milk Tea ", price: "$5.50" },
       { name: "Milk  Tea", price: "$5.50" },
@@ -27,6 +29,7 @@ const listDrink = [
   {
     category: "Milk  & Matcha",
     categoryImage: "milkcreamblacktea1.png",
+    nameImage: "Milk Creme Black Tea",
     itemDrinks: [
       { name: "Tiger Milk", price: "$6.00" },
       { name: "Tiger Milk with Grass Jelly", price: "$6.00" },
@@ -37,6 +40,7 @@ const listDrink = [
   {
     category: "Soda",
     categoryImage: "hokkaido1.png",
+    nameImage: "Hokkaido Milk Tea",
     itemDrinks: [
       { name: "Coke", price: "$2.75" },
       { name: "Diet coke", price: "$2.75" },
@@ -46,6 +50,7 @@ const listDrink = [
   {
     category: "Drinking Topping",
     categoryImage: "taiwanmilktea1.png",
+    nameImage: "Taiwan Milk Tea",
     itemDrinks: [
       { name: "Rainbow Jelly", price: "$0.75" },
       { name: "Lychee Jelly", price: "$0.75" },
@@ -82,7 +87,7 @@ export const DrinkACha = () => {
                             />
                           </div>
                           <div className="drink__tasty__list__text">
-                            <p>Mustache</p>
+                            <p>{d.nameImage}</p>
                           </div>
                         </div>
                       </div>

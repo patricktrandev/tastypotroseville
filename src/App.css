@@ -76,6 +76,9 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.loader__tasty {
+  margin-top: 7rem;
+}
 /* HEADER */
 header {
   position: absolute;
@@ -185,7 +188,7 @@ header {
   object-fit: cover;
 }
 #carouselTastyHotpot .carousel-item:first-child {
-  background-image: url("../public/image/tasty_hotpot_home_1.jpg");
+  background-image: url("../public/image/1.png");
 }
 #carouselTastyHotpot .carousel-item:nth-child(2) {
   background-image: url("../public/image/tasty_hotpot_home_2.png");
@@ -230,8 +233,9 @@ header {
 }
 
 .tasty__promotion .tasty__promotion__item {
-  padding: 6% 60px;
+  padding: 4% 35px;
   width: 70%;
+  margin: auto;
 }
 .tasty__promotion .tasty__promotion__title > h1 {
   font-size: 2rem;
@@ -249,7 +253,6 @@ header {
 
 .tasty__promotion .promotion__tasty__title__content_text {
   margin: auto;
-  padding: 125px 0;
 }
 
 .tasty__promotion .promotion__tasty__title__content_text > h1 {
@@ -319,7 +322,7 @@ header {
 }
 .tastyMenu__hotpot__caption {
   color: #7a7a7a;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .tastyMenu__hotpot .tastyMenu__hotpot__list .tastyMenu__hotpot__img {
   overflow: hidden;
@@ -450,7 +453,7 @@ header {
   text-align: center;
 }
 .drink__tasty__list__text {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   font-weight: 600;
   color: #000;
@@ -591,10 +594,10 @@ header {
 }
 .about__tasty__content h4 {
   margin: 22px 0;
+  font-family: "Lobster", sans-serif;
   color: #7a7a7a;
   font-weight: 700;
   font-size: 2rem;
-  text-transform: uppercase;
   padding: 7px 0;
   border-bottom: 2px dotted #535050;
 }
@@ -767,7 +770,7 @@ header {
 
   .tastyMenu__hotpot .subtitle,
   .tastyMenu__hotpot__caption {
-    margin: 0 30px;
+    margin: 0 20px;
   }
   /* ITEM MENU */
 
@@ -782,6 +785,10 @@ header {
     font-size: 1.5rem;
   }
   .hotpot__item .hotpot__menu__item__text {
+    font-size: 1.1rem;
+  }
+
+  .tasty__top__footer__address p {
     font-size: 1.1rem;
   }
 }
@@ -867,7 +874,7 @@ header {
   }
   /* FOOTER */
   .tasty__top__footer .tasty__top__footer__logo img {
-    width: 60px;
+    width: 75px;
   }
   .tasty__top__footer__address p {
     font-size: 1.1rem;
@@ -915,6 +922,10 @@ header {
   .hotpot__item .hotpot__menu__item__text {
     font-size: 1rem;
     line-height: 1.2rem;
+  }
+  .tastyMenu__hotpot .subtitle,
+  .tastyMenu__hotpot__caption {
+    margin: 0 10px;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -1089,5 +1100,9 @@ header {
   .about__tasty,
   .promotion__tasty {
     padding: 0 1.8rem;
+  }
+  .tastyMenu__hotpot .subtitle,
+  .tastyMenu__hotpot__caption {
+    margin: 0 10px;
   }
 }

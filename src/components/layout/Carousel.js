@@ -26,7 +26,7 @@ export const Carousel = () => {
                 <p>New Christmas Drink</p>
                 <div className="common-button">
                   <Link to="/promotion">
-                    <span>Get new promotion!</span>
+                    <span>Get new promotion</span>
                   </Link>
                 </div>
               </div>
@@ -45,9 +45,10 @@ export const Carousel = () => {
           data-target="#carouselTastyHotpot"
           data-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true">
-            {" "}
-          </span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="sr-only">Previous</span>
         </button>
         <button

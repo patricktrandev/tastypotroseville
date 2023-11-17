@@ -5,7 +5,6 @@ const listAddOns = [
   {
     price: "$5.50",
     dishes: [
-      "Fermented Tofu",
       "Meatball",
       "Fishball",
       "Tempura",
@@ -17,7 +16,7 @@ const listAddOns = [
   },
   {
     price: "$6.95",
-    dishes: ["Spicy Fermented Tofu", "Beef Slices", "Lamb Slices"],
+    dishes: ["Beef Slices", "Lamb Slices"],
   },
   {
     price: "$6.50",
@@ -54,12 +53,14 @@ const listAddOns = [
 export const AddOns = () => {
   return (
     <Fragment>
-      <StepContent step={"STEP 3"} sub={"Choose Your Add-ons"} />
       <section className="tasty__drinks section-spacing container">
         <div className="tasty__drinks__overlay" />
-        <div className="row my-3">
-          <div className="col tasty__addons__title subtitle">
-            <span>add ons</span>
+        <div className="text-center">
+          <div className="drink__tasty__acha line-bottom-title">
+            <p className="my-3">Add Ons</p>
+            <div className="tastyMenu__hotpot__caption my-3">
+              <p>Choose Your Add Ons</p>
+            </div>
           </div>
         </div>
         <div className="row tasty__drinks_list">
