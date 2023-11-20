@@ -112,8 +112,8 @@ header {
   z-index: 16;
 }
 .tastyhotPotNav .logo-img {
-  max-height: 91px;
-  width: 105%;
+  height: 6.5rem;
+  max-width: 100%;
 }
 #tastyHotPotNavBar .navbar-nav {
   border-bottom: 1px solid rgba(255, 255, 255);
@@ -257,6 +257,7 @@ header {
 
 .tasty__promotion .promotion__tasty__title__content_text > h1 {
   font-size: 2rem;
+
   line-height: 2rem;
   font-weight: 600;
   letter-spacing: 7px;
@@ -309,7 +310,7 @@ header {
   padding: 15px 10px;
 }
 .tasty__top__footer__social a {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   margin: 20px 7px;
   color: #fff;
 }
@@ -439,7 +440,7 @@ header {
 }
 .drink__tasty .drink__tasty__list .drink__tasty__list__img img {
   max-height: 200px;
-  width: 200px;
+  width: 170px;
 }
 .drink__tasty__list .drink__tasty__list__item {
   height: 240px;
@@ -570,7 +571,10 @@ header {
   background: #333333;
   top: 5px;
 }
-
+.tasty__step__rice img {
+  margin: auto;
+  max-width: 400px;
+}
 /* ABOUT TASTY */
 .about__tasty,
 .promotion__tasty {
@@ -676,6 +680,7 @@ header {
 }
 
 .promotion__tasty__title h1 {
+  font-family: "Lobster", sans-serif;
   line-height: 9rem;
   font-size: 9rem;
   font-weight: 900;
@@ -1039,7 +1044,7 @@ header {
     padding: 12px 7px;
   }
   .tasty__top__footer__social a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .promotion__tasty__content__item {
     width: 300px;

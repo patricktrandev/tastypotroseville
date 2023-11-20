@@ -33,7 +33,7 @@ const listDrink = [
     itemDrinks: [
       { name: "Tiger Milk", price: "$6.00" },
       { name: "Tiger Milk with Grass Jelly", price: "$6.00" },
-      { name: "Tiger Milk with Pudding", price: "$6.00" },
+      { name: "Tiger Milk with Crystal Boba", price: "$6.00" },
       { name: "Matcha Latte ", price: "$6.00" },
     ],
   },
@@ -56,6 +56,17 @@ const listDrink = [
       { name: "Lychee Jelly", price: "$0.75" },
       { name: "Grass Jelly", price: "$0.75" },
       { name: "Tapioca Boba", price: "$0.75" },
+    ],
+  },
+  {
+    category: "Beer",
+    categoryImage: "bluemoonbeer.png",
+    nameImage: "Blue Moon Beer",
+    itemDrinks: [
+      { name: "Heneiken", price: "$6.00" },
+      { name: "Corona", price: "$6.00" },
+      { name: "Sapporo", price: "$6.00" },
+      { name: "Blue Moon", price: "$6.00" },
     ],
   },
 ];

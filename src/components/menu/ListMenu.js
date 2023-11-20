@@ -29,9 +29,9 @@ const listMenu = [
   },
   {
     imageUrl: "/image/5.png",
-    name: "Stinky Tofu Hot Soup",
+    name: "Tomato Hot Soup",
     description:
-      "Taiwanese Cabbage, Pork Slices, Fermented Tofu, Vermicelli, Enoki Mushroom, Kamaboko, Clam, Meatball, Quail Egg, Pork Blood Rice Cake, Pork Intestine, Mini Sausage, Chives, Salty Veggies, Tomato, Fried Tofu Skin",
+      "Frozen Tofu, Mussel, Shrimp, Corn, Roe Fishball, Tomato, Kamaboko, Clam, Tempura, Fishball, Quail Egg, Brocoli, Oyster Mushroom, Enoki Mushroom, Korean Ricecake",
   },
   {
     imageUrl: "/image/6.png",

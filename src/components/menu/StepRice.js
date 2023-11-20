@@ -13,6 +13,16 @@ export const StepRice = () => {
           </div>
         </div>
       </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="tasty__step__rice text-center">
+            <img
+              src="./image/choosericeorvermicelli.png"
+              alt="choosericeorvermicelli.png"
+            />
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 };

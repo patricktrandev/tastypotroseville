@@ -16,17 +16,11 @@ const listAddOns = [
   },
   {
     price: "$6.95",
-    dishes: ["Beef Slices", "Lamb Slices"],
+    dishes: ["Beef Slices", "Lamb Slices", "Pork Slices"],
   },
   {
     price: "$6.50",
-    dishes: [
-      "Pork Slices",
-      "Pork Intestine",
-      "Shrimp",
-      "Roe Fishball",
-      "Mini Sausages",
-    ],
+    dishes: ["Pork Intestine", "Shrimp", "Roe Fishball", "Mini Sausages"],
   },
   {
     price: "$4.50",
