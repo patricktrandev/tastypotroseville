@@ -4,14 +4,10 @@ import { FooterMain } from "./footer/FooterMain";
 import { Loader } from "./layout/Loader";
 const listPromo = [
   {
-    name: "Spread The Soul of Christmas",
-    description: "Happy Holidays from Tasty Pot",
-    imgSrc: "happyholidys.png",
-  },
-  {
-    name: "Christmas 2023",
-    description: "Hour Business",
-    imgSrc: "hourbusiness.png",
+    name: "Back To School",
+    description: "Buy 4 Get 1 Free",
+    imgSrc:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1721302484/tastypot_roseville/backtoschool_oebpd9.jpg",
   },
 ];
 const delay = 1;
@@ -59,10 +55,7 @@ export const Promotion = () => {
                             </div>
                           </div>
                           <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 promotion__tasty__img">
-                            <img
-                              src={`./image/${item.imgSrc}`}
-                              alt="rewardad"
-                            />
+                            <img src={`${item.imgSrc}`} alt="rewardad" />
                           </div>
                         </div>
                       </div>

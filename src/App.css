@@ -188,13 +188,13 @@ header {
   object-fit: cover;
 }
 #carouselTastyHotpot .carousel-item:first-child {
-  background-image: url("../public/image/1.png");
+  background-image: url("https://res.cloudinary.com/dctb1eocj/image/upload/v1701248541/tastypot_roseville/tasty_hotpot_home_1_s15giu.jpg");
 }
 #carouselTastyHotpot .carousel-item:nth-child(2) {
-  background-image: url("../public/image/tasty_hotpot_home_2.png");
+  background-image: url("https://res.cloudinary.com/dctb1eocj/image/upload/v1701248543/tastypot_roseville/tasty_hotpot_home_2_kdq7gk.png");
 }
 #carouselTastyHotpot .carousel-item:nth-child(3) {
-  background-image: url("../public/image/tasty_hotpot_home_3.jpg");
+  background-image: url("https://res.cloudinary.com/dctb1eocj/image/upload/v1701248540/tastypot_roseville/tasty_hotpot_home_3_lxgolt.jpg");
 }
 /* INTRO */
 
@@ -290,8 +290,8 @@ header {
 .tasty__promotion .promotion__tasty__img img {
   width: 80%;
   object-fit: cover;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .tasty__top__footer {
@@ -347,7 +347,7 @@ header {
 .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h3 {
   font-weight: 700;
   letter-spacing: 2px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 .tastyMenu__hotpot .tastyMenu__hotpot__item .tastyMenu__hotpot__content h4 {

@@ -9,7 +9,7 @@ export const FooterMain = () => {
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tasty__top__footer__logo d-flex">
               <img src="/image/logo_tasty.png" alt="logo" />
               <div className="tasty__top__footer__address mx-4">
-                <p>1020 Pleasant Grove, Ste 170, Roseville, CA 95678</p>
+                <p>1020 Pleasant Grove, Ste 170, Roseville, CA95678</p>
                 <p>(916)-749-4236</p>
               </div>
             </div>
@@ -32,7 +32,7 @@ export const FooterMain = () => {
         <div className="container">
           <div className="row text-center">
             <div className="col">
-              <p>© Tasty Hot Pot 2023. All rights reserved</p>
+              <p>© Tasty Pot Roseville 2023. All rights reserved </p>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ export const Carousel = () => {
             <div className="tastyHotPotCarousel__overlay" />
             <div className="container carousel-caption">
               <div className="col-10 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-                <h1>Christmas 2023</h1>
+                <h1>Back To School</h1>
                 <p></p>
                 <div className="common-button">
                   <Link to="/promotion">

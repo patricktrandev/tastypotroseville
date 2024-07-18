@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 const listDrink = [
   {
     category: "Mustache",
-    categoryImage: "milkcream1.png",
+    categoryImage:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248563/tastypot_roseville/milkcream1_lzia0b.png",
     nameImage: "Milk Creme Green Tea",
     itemDrinks: [
       { name: "Milk Creme Green Tea", price: "$5.75" },
@@ -12,7 +13,8 @@ const listDrink = [
   },
   {
     category: "Milk Tea",
-    categoryImage: "greentea1.png",
+    categoryImage:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248563/tastypot_roseville/milkcream1_lzia0b.png",
     nameImage: "Green Tea",
     itemDrinks: [
       { name: "Hokkaido Milk Tea ", price: "$5.50" },
@@ -28,7 +30,8 @@ const listDrink = [
   },
   {
     category: "Milk  & Matcha",
-    categoryImage: "milkcreamblacktea1.png",
+    categoryImage:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248563/tastypot_roseville/milkcream1_lzia0b.png",
     nameImage: "Milk Creme Black Tea",
     itemDrinks: [
       { name: "Tiger Milk", price: "$6.00" },
@@ -39,7 +42,8 @@ const listDrink = [
   },
   {
     category: "Soda",
-    categoryImage: "hokkaido1.png",
+    categoryImage:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248549/tastypot_roseville/hokkaido1_npht7w.png",
     nameImage: "Hokkaido Milk Tea",
     itemDrinks: [
       { name: "Coke", price: "$2.75" },
@@ -49,7 +53,8 @@ const listDrink = [
   },
   {
     category: "Drinking Topping",
-    categoryImage: "taiwanmilktea1.png",
+    categoryImage:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248562/tastypot_roseville/taiwanmilktea1_zgelmt.png",
     nameImage: "Taiwan Milk Tea",
     itemDrinks: [
       { name: "Rainbow Jelly", price: "$0.75" },
@@ -60,7 +65,8 @@ const listDrink = [
   },
   {
     category: "Beer",
-    categoryImage: "bluemoonbeer.png",
+    categoryImage:
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248553/tastypot_roseville/bluemoonbeer_ysjiv3.png",
     nameImage: "Blue Moon Beer",
     itemDrinks: [
       { name: "Heneiken", price: "$6.00" },
@@ -93,7 +99,7 @@ export const DrinkACha = () => {
                         <div className="drink__tasty__list__item">
                           <div className="drink__tasty__list__img">
                             <img
-                              src={`./image/${d.categoryImage}`}
+                              src={`${d.categoryImage}`}
                               alt={d.categoryImage}
                             />
                           </div>
