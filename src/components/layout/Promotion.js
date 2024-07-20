@@ -19,7 +19,7 @@ export const Promotion = () => {
               teas, and desserts.
             </p>
           </div>
-          <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__promotion__img">
+          <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__home__img">
             <img
               src="https://res.cloudinary.com/dctb1eocj/image/upload/v1701248540/tastypot_roseville/tasty_hotpot_menu_2_ihalb1.jpg"
               alt="rewardad"
@@ -27,7 +27,7 @@ export const Promotion = () => {
           </div>
         </div>
         <div className="row tasty__promotion__row justify-content-center">
-          <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__promotion__img">
+          <div className="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 tasty__home__img">
             <img
               src="https://res.cloudinary.com/dctb1eocj/image/upload/v1701248542/tastypot_roseville/tasty_hotpot_menu_1_ifke0q.jpg"
               alt="rewardad"

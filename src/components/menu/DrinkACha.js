@@ -14,7 +14,7 @@ const listDrink = [
   {
     category: "Milk Tea",
     categoryImage:
-      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248563/tastypot_roseville/milkcream1_lzia0b.png",
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248555/tastypot_roseville/greentea1_k4ojs4.png",
     nameImage: "Green Tea",
     itemDrinks: [
       { name: "Hokkaido Milk Tea ", price: "$5.50" },
@@ -31,7 +31,7 @@ const listDrink = [
   {
     category: "Milk  & Matcha",
     categoryImage:
-      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248563/tastypot_roseville/milkcream1_lzia0b.png",
+      "https://res.cloudinary.com/dctb1eocj/image/upload/v1701248550/tastypot_roseville/milkcreamblacktea1_hfluk3.png",
     nameImage: "Milk Creme Black Tea",
     itemDrinks: [
       { name: "Tiger Milk", price: "$6.00" },

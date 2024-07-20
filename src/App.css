@@ -284,14 +284,22 @@ header {
 .tasty__promotion img {
   width: 100%;
   object-fit: cover;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
 }
 .tasty__promotion .promotion__tasty__img img {
-  width: 80%;
+  width: 100%;
+  object-fit: cover;
+  /* border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px; */
+  padding: 0;
+}
+.tasty__promotion .tasty__home__img img {
+  width: 100%;
   object-fit: cover;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  padding: 0;
 }
 
 .tasty__top__footer {
@@ -764,7 +772,10 @@ header {
     margin-bottom: 2rem;
   }
   .tasty__promotion img {
-    width: 80%;
+    width: 100%;
+    object-fit: cover;
+
+    padding: 0;
   }
 
   /* MENU */
@@ -932,6 +943,11 @@ header {
   .tastyMenu__hotpot__caption {
     margin: 0 10px;
   }
+  .promotion__tasty__img img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 575.98px) {
   header .navbar-brand,
@@ -1039,6 +1055,7 @@ header {
     font-size: 1.5rem;
     line-height: 1.8rem;
   }
+
   /* FOOTER */
   .tasty__top__footer__social {
     padding: 12px 7px;
@@ -1109,5 +1126,10 @@ header {
   .tastyMenu__hotpot .subtitle,
   .tastyMenu__hotpot__caption {
     margin: 0 10px;
+  }
+  .promotion__tasty__img img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
   }
 }
